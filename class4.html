@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1, div  {
+            text-align: center;
+        }
+
+        img{
+            width: 250px;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1 id="secret">what is my name?</h1>
+    <img id="image" src="cool.jpg"><br><br>
+    <div>
+        <button onclick="document.getElementById('secret').innerHTML='my name is Jaden'">click to know my name</button>
+        <button onclick="document.getElementById('secret').innerHTML='what is my name?'">reset</button>
+        <button onclick="document.getElementById('secret').style.color='blue'"> change to blue</button>
+        <button onclick="document.getElementById('secret').style.fontSize='50px'"> change size</button>
+        <button onclick="changeImage('smiling.jpg')">i am smilling</button>
+        <button onclick="changeImage('angry.jpg')">my angry face</button>
+        <button onclick="document.getElementById('image').style.display='none'">hide face</button>
+        <button onclick="document.getElementById('image').style.display='block'">show face</button>
+    </div>
+    <script src="class4.js"></script>
+</body>
+
+</html>
